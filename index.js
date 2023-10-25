@@ -31,7 +31,7 @@ function createMessage(fahren, celc) {}
  */
 function rand(limit) {}
 
-// -------------------- DONT NOT CHANGE THE CODE BELOW ---------------------- //
+// -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
 
 let fahren = prompt(
   "enter a number, we will convert that number from fahrenheit to celcius"
