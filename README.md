@@ -4,10 +4,11 @@ In this project, you will be building out the functionality of a simple app that
 
 ## Instructions
 
-1. Fork this repository and then clone it down to your own computer.
-2. Open the project in VS Code.
-3. Live serve `index.html`. You should be greeted with a prompt.
-4. Complete the functions described in `index.js`!
+1. Create a new repository by using this starter repo as a template.
+2. Clone down your version.
+3. Open the project in VS Code.
+4. Live serve `index.html`. You should be greeted with a prompt.
+5. Complete the functions described in `index.js`!
 
 ## Submission
 
