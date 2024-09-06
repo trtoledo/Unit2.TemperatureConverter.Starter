@@ -1,58 +1,64 @@
 // Complete the following functions to make our program work!
 
 /**
- * Takes a F number and returns the number to C
- * @param {string} fahren temperature in degrees F
- * @returns {number} the number of degrees C
+ * Converts the given Fahrenheit temperature `f` to Celsius.
+ * @param {number} f temperature in °F
+ * @returns {number} temperature in °C
  */
-function convertToCelsius(fahren) {}
+function convertToCelsius(f) {
+  // TODO
+}
 
 /**
- * Takes both numbers (F, C) and display a message with
- * both numbers and how that temp makes you feel using
- * this chart
+ * | Temperature | Description |
+ * | ----------- | ----------- |
+ * | < 32        | "very cold" |
+ * | < 64        | "cold"      |
+ * | < 86        | "warm"      |
+ * | < 100       | "hot"       |
+ * | >= 100      | "very hot"  |
  *
- *   Temp      Feels
- * ---------|----------
- *   < 32   |  "very cold"
- *   < 64   |  "cold"
- *   < 86   |  "warm"
- *   < 100  |  "hot"
- *
- * @param {number} fahren
- * @param {number} celc
+ * @param {number} f temperature in °F
+ * @returns {string} the description from the table above corresponding to
+ * the given Fahrenheit temperature `f`
  */
-function createMessage(fahren, celc) {}
+function describeTemperature(f) {
+  // TODO
+}
 
 /**
- * Takes a number and returns a random integer from 0 to the limit
  * @param {number} limit
- * @returns {number} a number between 0 and the int passed in
+ * @returns {number} a random integer in the range [0, `limit`)
  */
-function rand(limit) {}
+function getRandomInt(limit) {
+  // TODO
+}
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
+/**
+ * Converts the given temperature from Fahrenheit to Celsius,
+ * then alerts the user with a descriptive message.
+ * @param {number} f temperature in °F
+ */
+function parseFahrenheit(f) {
+  const c = convertToCelsius(f);
+  const description = describeTemperature(f);
+  const message = `${f}°F is ${c}°C. That is ${description}.`;
+  alert(message);
+}
 
-let fahren = prompt(
-  "enter a number, we will convert that number from fahrenheit to celcius"
-);
-let celc = convertToCelsius(fahren);
-let output = createMessage(fahren, celc);
-console.log(output);
+const fahrenheitPrompt =
+  "Please enter a number. We will convert that temperature from Fahrenheit to Celsius.";
+let f = prompt(fahrenheitPrompt);
+parseFahrenheit(+f);
 
-fahren = prompt(
-  "Lets try that again. enter a number, we will convert that number from fahrenheit to celcius"
-);
-celc = convertToCelsius(fahren);
-output = createMessage(fahren, celc);
-console.log(output);
+alert("Let's try that again.");
+f = prompt(fahrenheitPrompt);
+parseFahrenheit(+f);
 
-fahren = rand(110);
-celc = convertToCelsius(fahren);
-output = createMessage(fahren, celc);
-console.log(output);
+alert("Let's try some random temperatures.");
+f = getRandomInt(110);
+parseFahrenheit(f);
 
-fahren = rand(110);
-celc = convertToCelsius(fahren);
-output = createMessage(fahren, celc);
-console.log(output);
+f = getRandomInt(110);
+parseFahrenheit(f);
