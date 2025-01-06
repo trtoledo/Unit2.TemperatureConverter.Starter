@@ -24,15 +24,32 @@ function convertToCelsius(f) {
  * the given Fahrenheit temperature `f`
  */
 function describeTemperature(f) {
-  if f < 32 
+  let message 
+
+  if (f < 32 ){
+    message = "It is freezing!";
+  } else if (f < 64){
+    message = "It is cold!";
+  }else if (f < 86){
+    message = "It is warm!";
+  }else if (f < 100){
+    message = "It is hot!";
+  }else {
+    message = 'It is Scorching!';
+  }
+  return message
+  }
+
   // TODO
-}
+
 
 /**
  * @param {number} limit
  * @returns {number} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
+
+  return Math.floor(Math.random() * limit);
   // TODO
 }
 
