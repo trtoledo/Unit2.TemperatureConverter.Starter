@@ -6,6 +6,7 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
+  return (f-32)*5/9;
   // TODO
 }
 
@@ -23,6 +24,7 @@ function convertToCelsius(f) {
  * the given Fahrenheit temperature `f`
  */
 function describeTemperature(f) {
+  if f < 32 
   // TODO
 }
 
